@@ -1,0 +1,112 @@
+.modal {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+    width: 616.28px;
+    height: 357.17px;
+    background: linear-gradient(301.6deg, #1B0441 -3.15%, #521698 106.3%) padding-box,
+        linear-gradient(138deg, #3755F0 41.93%, #C00297 69.02%) border-box;
+    border: 2px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 15%;
+
+
+    .modal-close {
+        position: absolute;
+        top: 22px;
+        right: 19.55px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-header {
+        display: flex;
+        justify-content: center;
+        height: 68px;
+        align-items: center;
+
+        &__title {
+            color: #FFFFFF;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+        }
+    }
+
+    .modal-line {
+        margin: 0 20px;
+        height: 1px;
+        background: linear-gradient(138deg, #3755F0 41.93%, #C00297 69.02%);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    &-content {
+        width: auto;
+        height: 68px;
+        margin: 20px 27.17px 0 27.17px;
+        text-align: left;
+        box-sizing: border-box;
+
+        &__title {
+            box-sizing: border-box;
+            font-family: 'SF UI Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+        }
+
+        &__pass {
+            margin-top: 8px;
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            margin-top: 33px;
+
+            .btn-cancel {
+                margin-right: 40px;
+                border: 2px solid transparent;
+                background: linear-gradient(301.6deg, #1B0441 -3.15%, #521698 106.3%) padding-box,
+                    linear-gradient(138deg, #3755F0 41.93%, #C00297 69.02%) border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 2px rgba(0, 0, 0, 0.25);
+            }
+
+            .btn-join {
+                border: none;
+                background: linear-gradient(317.15deg, #6E34CD 3.65%, #C10297 91.98%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}
+
+// Mobile: width < 740px
+@media only screen and (max-width : 46.1875em) {
+    .modal {
+        width: 310px;
+        margin-top: 30%;
+
+        &-header {
+            &__title {
+                width: 170px;
+                font-size: 18px;
+            }
+        }
+
+        .btn-cancel {
+            display: none;
+        }
+    }
+}
