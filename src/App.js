@@ -10,8 +10,8 @@ const App = () => {
   const {isShowing, toggle} = useModal();
 
   return (
-    <div className={cx("app")}>
-      <button className={cx("button-default")} onClick={toggle}>Show Modal</button>
+    <div className={cx(styles.app)}>
+      <button className={cx(styles.buttonDefault)} onClick={toggle}>Show Modal</button>
       <Modal
         isShowing={isShowing}
         hide={toggle}
