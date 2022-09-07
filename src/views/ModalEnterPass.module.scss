@@ -69,6 +69,20 @@
 
         &__pass {
             margin-top: 8px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .icon-pass {
+                position: absolute;
+                right: 0;
+                color: rgb(190, 190, 190);
+                margin-right: 10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
 
         &__button {
